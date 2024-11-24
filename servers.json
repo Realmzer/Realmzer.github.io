@@ -1,0 +1,56 @@
+{
+    "servers": [
+        {
+            "name": "SideStore",
+            "address": "https://ani.sidestore.io"
+        },
+        {
+            "name": "SideStore (.zip)",
+            "address": "https://ani.sidestore.zip"
+        },
+        {
+            "name": "SideStore (.xyz)",
+            "address": "https://ani.846969.xyz"
+        },
+        {
+            "name": "Stern",
+            "address": "http://ani.sternserv.xyz"
+        },
+        {
+            "name": "Macley",
+            "address": "http://5.249.163.88:6969"
+        },
+        {
+            "name": "Jawshoeadan",
+            "address": "https://anisette.jawshoeadan.me"
+        },
+        {
+            "name": "WesleyBryie",
+            "address": "https://ani.wesbryie.com"
+        },
+        {
+            "name": "Stossy11",
+            "address": "https://anisette.stossy11.com"
+        },
+        {
+            "name": "SeasiDev",
+            "address": "https://anisette.seasi.dev"
+        },
+        {
+            "name": "SteX",
+            "address": "https://ani.xu30.top"
+        },
+        {
+            "name": "owoellen",
+            "address": "https://ani.owoellen.rocks"
+        },
+        {
+            "name": "pythonplayer123",
+            "address": "https://ani3server.fly.dev"
+        },
+        {
+            "name": "Realmzer",
+            "address": "https://anisette.omnidev.org/"
+        }
+    ]
+}
