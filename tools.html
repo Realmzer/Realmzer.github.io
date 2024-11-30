@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Realmzers Site - Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <style>
+    
+body{
+    margin: 0;
+    background: linear-gradient(to right, #1b1717, #1b1717);
+    text-align: center;
+    background-filter: blur(10px);
+    }
+  /* width */
+  ::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.8); 
+}
+
+.titletext {
+        color: #ffffff;
+        font-size:25px; 
+      }
+
+      .button:active {
+  opacity: 0.9;
+  transform: translateY(1px);
+}
+
+.esign {
+    background-color: rgb(58, 183, 233)
+  }
+
+.button {
+  background-color: #0000005b;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:hover {background-color: #000000;}
+
+.button:active {
+  opacity: 0.9;
+  transform: translateY(1px);
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 32px;}
+.button5 {border-radius: 50%;}
+
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: center;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 0px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .navbar .social-icons {
+            float: center;
+        }
+
+        .navbar .social-icons a {
+            padding: 0 10px;
+        }
+
+        .social-icons img {
+            height: 20px;
+            width: 20px;
+        }
+ 
+ span {
+  text-shadow: 5px 10px 14px #000000;
+}
+  body {
+      font-family: 'DM Sans';font-size: 25px;
+  }
+  
+  </style>
+  </head>
+  <body>
+    <body>
+      <div class="sidenav">
+        <a href="index.html">Index</a>
+        <button class="dropdown-btn">Tools &#9662;</button>
+        <div class="dropdown-container">
+          <a href="shortcuts.html">Shortcuts</a>
+          <a href="certificates.html">Certificates</a>
+        </div>
+        <a href="project.html">Project</a>
+      </div>
+  
+      <div class="main-content">
+    <h1>Tools</h1>
+    <p>Heres a few of my many tools that im currently developing and that are public.</p>
+<p></p>
+<hr>
+<h2>iOS</h2>
+<a href="shortcuts.html" target="_self" class="button button3 + float-on-hover">iOS Shortcuts</a>
+<a href="https://raw.githubusercontent.com/Sideloading-Collective/SLC-DNS/refs/heads/main/SLDNS.mobileconfig" target="_self" class="button button3 + float-on-hover">SLC DNS (No Revoke & Blacklists iOS)</a>
+<a href="https://raw.githubusercontent.com/Sideloading-Collective/SLC-DNS/refs/heads/main/SLCADBLOCK.mobileconfig" target="_self" class="button button3 + float-on-hover">SLC DNS Adblock (No Revoke & Blacklists iOS)</a>
+<a href="certificates.html" target="_self" class="button button3 + float-on-hover">iOS Certificates</a>
+
+</a>
+<h2></h2>
+  </body>
+  </div>
+</div>
+
+<script>
+ document.querySelectorAll('.dropdown-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const dropdown = button.nextElementSibling;
+    if (dropdown.classList.contains('open')) {
+      dropdown.classList.remove('open');
+    } else {
+      document.querySelectorAll('.dropdown-container.open').forEach(openDropdown => {
+        openDropdown.classList.remove('open');
+      });
+      dropdown.classList.add('open');
+    }
+  });
+});
+
+</script>
+
+  <script>
+    function copyRepoLink() {
+       var textToCopy = `https://raw.githubusercontent.com/Realmzer/AltStore-Repo/refs/heads/main/app-repo.json`;
+       var textarea = document.createElement("textarea");
+       textarea.value = textToCopy;
+       document.body.appendChild(textarea);
+       textarea.select();
+       document.execCommand("copy");
+       document.body.removeChild(textarea);
+       alert("MySign Repository copied to clipboard!");
+   }
+   </script>
+</html>

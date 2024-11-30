@@ -16,6 +16,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <style>
 
+body{
+    margin: 0;
+    background: linear-gradient(to right, #1b1717, #1b1717);
+    text-align: center;
+    background-filter: blur(10px);
+    }
   /* width */
   ::-webkit-scrollbar {
   width: 10px;
@@ -101,19 +107,41 @@
   </style>
   </head>
   <body>
-   <!-- <div class="navbar">
-        <div class="social-bar">
-            <a href="https://x.com/realmzerplus" target="_blank" rel="noopener noreferrer" class="twitter float-on-hover"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/Realmzer/Realmzer.github.io" target="_blank" rel="noopener noreferrer" class="github float-on-hover"><i class="fa fa-github "></i></a>
-            <a href="https://discord.gg/9ArHTK64j6" target="_blank" rel="noopener noreferrer" class=" float-on-hover"><i class="fa fa-discord"></i></a>
-          </div>
+    <div class="sidenav">
+      <a href="index.html">Index</a>
+      <button class="dropdown-btn">Tools &#9662;</button>
+      <div class="dropdown-container">
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="certificates.html">Certificates</a>
+      </div>
+      <a href="project.html">Project</a>
     </div>
-  --> 
+
+    <div class="main-content">
     <h1>iOS Certificates</h1>
+<P>These are enterprise certificates that can get revoked and they're all free.</P>
 <p></p>
 <a href="https://github.com/Realmzer/Realmzer.github.io/releases/download/All-Certs/CertificatePack.zip" target="_self" class="button button3 + float-on-hover">Certificate Pack 1</a>
 <p></p>    
 <p>Passwords: 1 & AppleP12.com</p>
+</div>
+
+<script>
+  document.querySelectorAll('.dropdown-btn').forEach(button => {
+   button.addEventListener('click', () => {
+     const dropdown = button.nextElementSibling;
+     if (dropdown.classList.contains('open')) {
+       dropdown.classList.remove('open');
+     } else {
+       document.querySelectorAll('.dropdown-container.open').forEach(openDropdown => {
+         openDropdown.classList.remove('open');
+       });
+       dropdown.classList.add('open');
+     }
+   });
+ });
+ 
+ </script>
   </body>
   </div>
 </html>
